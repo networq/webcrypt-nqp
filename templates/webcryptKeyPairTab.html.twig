@@ -1,0 +1,15 @@
+<h3>Public Key</h3>
+{% if node['networq:webcrypt:key-pair']['public-key'] %}
+<code style="white-space: wrap;">{{ node['networq:webcrypt:key-pair']['public-key'] }}</code>
+{% else %}N/A
+{% endif %}
+
+<div class="btn-box">
+    <a target="_blank" class="btn btn-primary" href="https://webcrypt.it?recipientPublicKey={{ node['networq:webcrypt:key-pair']['public-key'] }}">Send message</a>
+</div>
+
+<h3>Private Key</h3>
+{% if node['networq:webcrypt:key-pair']['private-key'] %}
+<code style="white-space: wrap;">{{ node['networq:webcrypt:key-pair']['private-key'] }}</code>
+{% else %}Not specified
+{% endif %}

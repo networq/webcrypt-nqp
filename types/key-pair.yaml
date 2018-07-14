@@ -1,0 +1,9 @@
+name: key-pair
+labelPlural: Key pairs
+labelSingular: Key pair
+
+fields:
+  public-key:
+    type: string
+  private-key:
+    type: string

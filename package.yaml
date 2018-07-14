@@ -1,0 +1,12 @@
+name: networq:webcrypt
+description: Webcrypt.it types
+license: MIT
+
+dependencies:
+  networq:core: latest
+
+widgets:
+  webcryptKeyPairTab:
+    type: networq:webcrypt:key-pair
+    hook: tabs
+    label: Webcrypt
